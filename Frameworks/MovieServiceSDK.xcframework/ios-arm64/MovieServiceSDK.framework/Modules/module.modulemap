@@ -1,0 +1,11 @@
+framework module MovieServiceSDK {
+  umbrella header "MovieServiceSDK.h"
+  export *
+
+  module * { export * }
+}
+
+module MovieServiceSDK.Swift {
+  header "MovieServiceSDK-Swift.h"
+  requires objc
+}

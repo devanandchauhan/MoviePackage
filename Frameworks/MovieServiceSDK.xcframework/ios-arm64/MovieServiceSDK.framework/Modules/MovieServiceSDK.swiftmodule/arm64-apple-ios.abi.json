@@ -1,0 +1,3488 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MovieServiceSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MovieServiceProtocol",
+        "printedName": "MovieServiceProtocol",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "fetchMovies",
+            "printedName": "fetchMovies(from:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MovieListEndpoint",
+                "printedName": "MovieServiceSDK.MovieListEndpoint",
+                "usr": "s:15MovieServiceSDK0A12ListEndpointO"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<MovieServiceSDK.MovieResponse, MovieServiceSDK.ServiceError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<MovieServiceSDK.MovieResponse, MovieServiceSDK.ServiceError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MovieResponse",
+                        "printedName": "MovieServiceSDK.MovieResponse",
+                        "usr": "s:15MovieServiceSDK0A8ResponseV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ServiceError",
+                        "printedName": "MovieServiceSDK.ServiceError",
+                        "usr": "s:15MovieServiceSDK0B5ErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MovieServiceSDK0aB8ProtocolP11fetchMovies4from10completionyAA0A12ListEndpointO_ys6ResultOyAA0A8ResponseVAA0B5ErrorOGctF",
+            "mangledName": "$s15MovieServiceSDK0aB8ProtocolP11fetchMovies4from10completionyAA0A12ListEndpointO_ys6ResultOyAA0A8ResponseVAA0B5ErrorOGctF",
+            "moduleName": "MovieServiceSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : MovieServiceSDK.MovieServiceProtocol>",
+            "sugared_genericSig": "<Self where Self : MovieServiceSDK.MovieServiceProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchMovie",
+            "printedName": "fetchMovie(id:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<MovieServiceSDK.Movie, MovieServiceSDK.ServiceError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<MovieServiceSDK.Movie, MovieServiceSDK.ServiceError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Movie",
+                        "printedName": "MovieServiceSDK.Movie",
+                        "usr": "s:15MovieServiceSDK0A0V"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ServiceError",
+                        "printedName": "MovieServiceSDK.ServiceError",
+                        "usr": "s:15MovieServiceSDK0B5ErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MovieServiceSDK0aB8ProtocolP05fetchA02id10completionySi_ys6ResultOyAA0A0VAA0B5ErrorOGctF",
+            "mangledName": "$s15MovieServiceSDK0aB8ProtocolP05fetchA02id10completionySi_ys6ResultOyAA0A0VAA0B5ErrorOGctF",
+            "moduleName": "MovieServiceSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : MovieServiceSDK.MovieServiceProtocol>",
+            "sugared_genericSig": "<Self where Self : MovieServiceSDK.MovieServiceProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "searchMovie",
+            "printedName": "searchMovie(query:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<MovieServiceSDK.MovieResponse, MovieServiceSDK.ServiceError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<MovieServiceSDK.MovieResponse, MovieServiceSDK.ServiceError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MovieResponse",
+                        "printedName": "MovieServiceSDK.MovieResponse",
+                        "usr": "s:15MovieServiceSDK0A8ResponseV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ServiceError",
+                        "printedName": "MovieServiceSDK.ServiceError",
+                        "usr": "s:15MovieServiceSDK0B5ErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MovieServiceSDK0aB8ProtocolP06searchA05query10completionySS_ys6ResultOyAA0A8ResponseVAA0B5ErrorOGctF",
+            "mangledName": "$s15MovieServiceSDK0aB8ProtocolP06searchA05query10completionySS_ys6ResultOyAA0A8ResponseVAA0B5ErrorOGctF",
+            "moduleName": "MovieServiceSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : MovieServiceSDK.MovieServiceProtocol>",
+            "sugared_genericSig": "<Self where Self : MovieServiceSDK.MovieServiceProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:15MovieServiceSDK0aB8ProtocolP",
+        "mangledName": "$s15MovieServiceSDK0aB8ProtocolP",
+        "moduleName": "MovieServiceSDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MovieListEndpoint",
+        "printedName": "MovieListEndpoint",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MovieServiceSDK0A12ListEndpointO2idSSvp",
+            "mangledName": "$s15MovieServiceSDK0A12ListEndpointO2idSSvp",
+            "moduleName": "MovieServiceSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MovieServiceSDK0A12ListEndpointO2idSSvg",
+                "mangledName": "$s15MovieServiceSDK0A12ListEndpointO2idSSvg",
+                "moduleName": "MovieServiceSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "popular",
+            "printedName": "popular",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MovieServiceSDK.MovieListEndpoint.Type) -> MovieServiceSDK.MovieListEndpoint",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MovieListEndpoint",
+                    "printedName": "MovieServiceSDK.MovieListEndpoint",
+                    "usr": "s:15MovieServiceSDK0A12ListEndpointO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MovieServiceSDK.MovieListEndpoint.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MovieListEndpoint",
+                        "printedName": "MovieServiceSDK.MovieListEndpoint",
+                        "usr": "s:15MovieServiceSDK0A12ListEndpointO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15MovieServiceSDK0A12ListEndpointO7popularyA2CmF",
+            "mangledName": "$s15MovieServiceSDK0A12ListEndpointO7popularyA2CmF",
+            "moduleName": "MovieServiceSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "upcoming",
+            "printedName": "upcoming",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MovieServiceSDK.MovieListEndpoint.Type) -> MovieServiceSDK.MovieListEndpoint",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MovieListEndpoint",
+                    "printedName": "MovieServiceSDK.MovieListEndpoint",
+                    "usr": "s:15MovieServiceSDK0A12ListEndpointO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MovieServiceSDK.MovieListEndpoint.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MovieListEndpoint",
+                        "printedName": "MovieServiceSDK.MovieListEndpoint",
+                        "usr": "s:15MovieServiceSDK0A12ListEndpointO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15MovieServiceSDK0A12ListEndpointO8upcomingyA2CmF",
+            "mangledName": "$s15MovieServiceSDK0A12ListEndpointO8upcomingyA2CmF",
+            "moduleName": "MovieServiceSDK"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MovieServiceSDK.MovieListEndpoint?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MovieListEndpoint",
+                    "printedName": "MovieServiceSDK.MovieListEndpoint",
+                    "usr": "s:15MovieServiceSDK0A12ListEndpointO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15MovieServiceSDK0A12ListEndpointO8rawValueACSgSS_tcfc",
+            "mangledName": "$s15MovieServiceSDK0A12ListEndpointO8rawValueACSgSS_tcfc",
+            "moduleName": "MovieServiceSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MovieServiceSDK0A12ListEndpointO8rawValueSSvp",
+            "mangledName": "$s15MovieServiceSDK0A12ListEndpointO8rawValueSSvp",
+            "moduleName": "MovieServiceSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MovieServiceSDK0A12ListEndpointO8rawValueSSvg",
+                "mangledName": "$s15MovieServiceSDK0A12ListEndpointO8rawValueSSvg",
+                "moduleName": "MovieServiceSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[MovieServiceSDK.MovieListEndpoint]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MovieListEndpoint",
+                    "printedName": "MovieServiceSDK.MovieListEndpoint",
+                    "usr": "s:15MovieServiceSDK0A12ListEndpointO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MovieServiceSDK0A12ListEndpointO8allCasesSayACGvpZ",
+            "mangledName": "$s15MovieServiceSDK0A12ListEndpointO8allCasesSayACGvpZ",
+            "moduleName": "MovieServiceSDK",
+            "static": true,
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[MovieServiceSDK.MovieListEndpoint]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MovieListEndpoint",
+                        "printedName": "MovieServiceSDK.MovieListEndpoint",
+                        "usr": "s:15MovieServiceSDK0A12ListEndpointO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MovieServiceSDK0A12ListEndpointO8allCasesSayACGvgZ",
+                "mangledName": "$s15MovieServiceSDK0A12ListEndpointO8allCasesSayACGvgZ",
+                "moduleName": "MovieServiceSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:15MovieServiceSDK0A12ListEndpointO",
+        "mangledName": "$s15MovieServiceSDK0A12ListEndpointO",
+        "moduleName": "MovieServiceSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[MovieServiceSDK.MovieListEndpoint]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MovieListEndpoint",
+                        "printedName": "MovieServiceSDK.MovieListEndpoint",
+                        "usr": "s:15MovieServiceSDK0A12ListEndpointO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MovieServiceSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MovieResponse",
+        "printedName": "MovieResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "results",
+            "printedName": "results",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[MovieServiceSDK.Movie]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Movie",
+                    "printedName": "MovieServiceSDK.Movie",
+                    "usr": "s:15MovieServiceSDK0A0V"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MovieServiceSDK0A8ResponseV7resultsSayAA0A0VGvp",
+            "mangledName": "$s15MovieServiceSDK0A8ResponseV7resultsSayAA0A0VGvp",
+            "moduleName": "MovieServiceSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[MovieServiceSDK.Movie]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Movie",
+                        "printedName": "MovieServiceSDK.Movie",
+                        "usr": "s:15MovieServiceSDK0A0V"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MovieServiceSDK0A8ResponseV7resultsSayAA0A0VGvg",
+                "mangledName": "$s15MovieServiceSDK0A8ResponseV7resultsSayAA0A0VGvg",
+                "moduleName": "MovieServiceSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MovieResponse",
+                "printedName": "MovieServiceSDK.MovieResponse",
+                "usr": "s:15MovieServiceSDK0A8ResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15MovieServiceSDK0A8ResponseV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s15MovieServiceSDK0A8ResponseV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MovieServiceSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:15MovieServiceSDK0A8ResponseV",
+        "mangledName": "$s15MovieServiceSDK0A8ResponseV",
+        "moduleName": "MovieServiceSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Movie",
+        "printedName": "Movie",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Movie",
+                "printedName": "MovieServiceSDK.Movie",
+                "usr": "s:15MovieServiceSDK0A0V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Movie",
+                "printedName": "MovieServiceSDK.Movie",
+                "usr": "s:15MovieServiceSDK0A0V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MovieServiceSDK0A0V2eeoiySbAC_ACtFZ",
+            "mangledName": "$s15MovieServiceSDK0A0V2eeoiySbAC_ACtFZ",
+            "moduleName": "MovieServiceSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MovieServiceSDK0A0V4hash4intoys6HasherVz_tF",
+            "mangledName": "$s15MovieServiceSDK0A0V4hash4intoys6HasherVz_tF",
+            "moduleName": "MovieServiceSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MovieServiceSDK0A0V2idSivp",
+            "mangledName": "$s15MovieServiceSDK0A0V2idSivp",
+            "moduleName": "MovieServiceSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MovieServiceSDK0A0V2idSivg",
+                "mangledName": "$s15MovieServiceSDK0A0V2idSivg",
+                "moduleName": "MovieServiceSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "title",
+            "printedName": "title",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MovieServiceSDK0A0V5titleSSvp",
+            "mangledName": "$s15MovieServiceSDK0A0V5titleSSvp",
+            "moduleName": "MovieServiceSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MovieServiceSDK0A0V5titleSSvg",
+                "mangledName": "$s15MovieServiceSDK0A0V5titleSSvg",
+                "moduleName": "MovieServiceSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "backdropPath",
+            "printedName": "backdropPath",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MovieServiceSDK0A0V12backdropPathSSSgvp",
+            "mangledName": "$s15MovieServiceSDK0A0V12backdropPathSSSgvp",
+            "moduleName": "MovieServiceSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MovieServiceSDK0A0V12backdropPathSSSgvg",
+                "mangledName": "$s15MovieServiceSDK0A0V12backdropPathSSSgvg",
+                "moduleName": "MovieServiceSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "posterPath",
+            "printedName": "posterPath",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MovieServiceSDK0A0V10posterPathSSSgvp",
+            "mangledName": "$s15MovieServiceSDK0A0V10posterPathSSSgvp",
+            "moduleName": "MovieServiceSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MovieServiceSDK0A0V10posterPathSSSgvg",
+                "mangledName": "$s15MovieServiceSDK0A0V10posterPathSSSgvg",
+                "moduleName": "MovieServiceSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "overview",
+            "printedName": "overview",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MovieServiceSDK0A0V8overviewSSvp",
+            "mangledName": "$s15MovieServiceSDK0A0V8overviewSSvp",
+            "moduleName": "MovieServiceSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MovieServiceSDK0A0V8overviewSSvg",
+                "mangledName": "$s15MovieServiceSDK0A0V8overviewSSvg",
+                "moduleName": "MovieServiceSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "voteAverage",
+            "printedName": "voteAverage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MovieServiceSDK0A0V11voteAverageSdvp",
+            "mangledName": "$s15MovieServiceSDK0A0V11voteAverageSdvp",
+            "moduleName": "MovieServiceSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MovieServiceSDK0A0V11voteAverageSdvg",
+                "mangledName": "$s15MovieServiceSDK0A0V11voteAverageSdvg",
+                "moduleName": "MovieServiceSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "voteCount",
+            "printedName": "voteCount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MovieServiceSDK0A0V9voteCountSivp",
+            "mangledName": "$s15MovieServiceSDK0A0V9voteCountSivp",
+            "moduleName": "MovieServiceSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MovieServiceSDK0A0V9voteCountSivg",
+                "mangledName": "$s15MovieServiceSDK0A0V9voteCountSivg",
+                "moduleName": "MovieServiceSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "runtime",
+            "printedName": "runtime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MovieServiceSDK0A0V7runtimeSiSgvp",
+            "mangledName": "$s15MovieServiceSDK0A0V7runtimeSiSgvp",
+            "moduleName": "MovieServiceSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MovieServiceSDK0A0V7runtimeSiSgvg",
+                "mangledName": "$s15MovieServiceSDK0A0V7runtimeSiSgvg",
+                "moduleName": "MovieServiceSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "releaseDate",
+            "printedName": "releaseDate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MovieServiceSDK0A0V11releaseDateSSSgvp",
+            "mangledName": "$s15MovieServiceSDK0A0V11releaseDateSSSgvp",
+            "moduleName": "MovieServiceSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MovieServiceSDK0A0V11releaseDateSSSgvg",
+                "mangledName": "$s15MovieServiceSDK0A0V11releaseDateSSSgvg",
+                "moduleName": "MovieServiceSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "backdropURL",
+            "printedName": "backdropURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MovieServiceSDK0A0V11backdropURL10Foundation0E0Vvp",
+            "mangledName": "$s15MovieServiceSDK0A0V11backdropURL10Foundation0E0Vvp",
+            "moduleName": "MovieServiceSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MovieServiceSDK0A0V11backdropURL10Foundation0E0Vvg",
+                "mangledName": "$s15MovieServiceSDK0A0V11backdropURL10Foundation0E0Vvg",
+                "moduleName": "MovieServiceSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "posterURL",
+            "printedName": "posterURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MovieServiceSDK0A0V9posterURL10Foundation0E0Vvp",
+            "mangledName": "$s15MovieServiceSDK0A0V9posterURL10Foundation0E0Vvp",
+            "moduleName": "MovieServiceSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MovieServiceSDK0A0V9posterURL10Foundation0E0Vvg",
+                "mangledName": "$s15MovieServiceSDK0A0V9posterURL10Foundation0E0Vvg",
+                "moduleName": "MovieServiceSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "genreText",
+            "printedName": "genreText",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MovieServiceSDK0A0V9genreTextSSvp",
+            "mangledName": "$s15MovieServiceSDK0A0V9genreTextSSvp",
+            "moduleName": "MovieServiceSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MovieServiceSDK0A0V9genreTextSSvg",
+                "mangledName": "$s15MovieServiceSDK0A0V9genreTextSSvg",
+                "moduleName": "MovieServiceSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ratingText",
+            "printedName": "ratingText",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MovieServiceSDK0A0V10ratingTextSSvp",
+            "mangledName": "$s15MovieServiceSDK0A0V10ratingTextSSvp",
+            "moduleName": "MovieServiceSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MovieServiceSDK0A0V10ratingTextSSvg",
+                "mangledName": "$s15MovieServiceSDK0A0V10ratingTextSSvg",
+                "moduleName": "MovieServiceSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "scoreText",
+            "printedName": "scoreText",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MovieServiceSDK0A0V9scoreTextSSvp",
+            "mangledName": "$s15MovieServiceSDK0A0V9scoreTextSSvp",
+            "moduleName": "MovieServiceSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MovieServiceSDK0A0V9scoreTextSSvg",
+                "mangledName": "$s15MovieServiceSDK0A0V9scoreTextSSvg",
+                "moduleName": "MovieServiceSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "yearText",
+            "printedName": "yearText",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MovieServiceSDK0A0V8yearTextSSvp",
+            "mangledName": "$s15MovieServiceSDK0A0V8yearTextSSvp",
+            "moduleName": "MovieServiceSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MovieServiceSDK0A0V8yearTextSSvg",
+                "mangledName": "$s15MovieServiceSDK0A0V8yearTextSSvg",
+                "moduleName": "MovieServiceSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "durationText",
+            "printedName": "durationText",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MovieServiceSDK0A0V12durationTextSSvp",
+            "mangledName": "$s15MovieServiceSDK0A0V12durationTextSSvp",
+            "moduleName": "MovieServiceSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MovieServiceSDK0A0V12durationTextSSvg",
+                "mangledName": "$s15MovieServiceSDK0A0V12durationTextSSvg",
+                "moduleName": "MovieServiceSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Movie",
+                "printedName": "MovieServiceSDK.Movie",
+                "usr": "s:15MovieServiceSDK0A0V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15MovieServiceSDK0A0V4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s15MovieServiceSDK0A0V4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MovieServiceSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MovieServiceSDK0A0V9hashValueSivp",
+            "mangledName": "$s15MovieServiceSDK0A0V9hashValueSivp",
+            "moduleName": "MovieServiceSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MovieServiceSDK0A0V9hashValueSivg",
+                "mangledName": "$s15MovieServiceSDK0A0V9hashValueSivg",
+                "moduleName": "MovieServiceSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:15MovieServiceSDK0A0V",
+        "mangledName": "$s15MovieServiceSDK0A0V",
+        "moduleName": "MovieServiceSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MovieGenre",
+        "printedName": "MovieGenre",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MovieGenre",
+                "printedName": "MovieServiceSDK.MovieGenre",
+                "usr": "s:15MovieServiceSDK0A5GenreV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15MovieServiceSDK0A5GenreV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s15MovieServiceSDK0A5GenreV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MovieServiceSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:15MovieServiceSDK0A5GenreV",
+        "mangledName": "$s15MovieServiceSDK0A5GenreV",
+        "moduleName": "MovieServiceSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MovieCredit",
+        "printedName": "MovieCredit",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MovieCredit",
+                "printedName": "MovieServiceSDK.MovieCredit",
+                "usr": "s:15MovieServiceSDK0A6CreditV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15MovieServiceSDK0A6CreditV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s15MovieServiceSDK0A6CreditV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MovieServiceSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:15MovieServiceSDK0A6CreditV",
+        "mangledName": "$s15MovieServiceSDK0A6CreditV",
+        "moduleName": "MovieServiceSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MovieCast",
+        "printedName": "MovieCast",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MovieServiceSDK0A4CastV2idSivp",
+            "mangledName": "$s15MovieServiceSDK0A4CastV2idSivp",
+            "moduleName": "MovieServiceSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MovieServiceSDK0A4CastV2idSivg",
+                "mangledName": "$s15MovieServiceSDK0A4CastV2idSivg",
+                "moduleName": "MovieServiceSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MovieCast",
+                "printedName": "MovieServiceSDK.MovieCast",
+                "usr": "s:15MovieServiceSDK0A4CastV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15MovieServiceSDK0A4CastV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s15MovieServiceSDK0A4CastV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MovieServiceSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:15MovieServiceSDK0A4CastV",
+        "mangledName": "$s15MovieServiceSDK0A4CastV",
+        "moduleName": "MovieServiceSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MovieCrew",
+        "printedName": "MovieCrew",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MovieServiceSDK0A4CrewV2idSivp",
+            "mangledName": "$s15MovieServiceSDK0A4CrewV2idSivp",
+            "moduleName": "MovieServiceSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MovieServiceSDK0A4CrewV2idSivg",
+                "mangledName": "$s15MovieServiceSDK0A4CrewV2idSivg",
+                "moduleName": "MovieServiceSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MovieCrew",
+                "printedName": "MovieServiceSDK.MovieCrew",
+                "usr": "s:15MovieServiceSDK0A4CrewV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15MovieServiceSDK0A4CrewV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s15MovieServiceSDK0A4CrewV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MovieServiceSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:15MovieServiceSDK0A4CrewV",
+        "mangledName": "$s15MovieServiceSDK0A4CrewV",
+        "moduleName": "MovieServiceSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MovieVideoResponse",
+        "printedName": "MovieVideoResponse",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MovieVideoResponse",
+                "printedName": "MovieServiceSDK.MovieVideoResponse",
+                "usr": "s:15MovieServiceSDK0A13VideoResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15MovieServiceSDK0A13VideoResponseV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s15MovieServiceSDK0A13VideoResponseV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MovieServiceSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:15MovieServiceSDK0A13VideoResponseV",
+        "mangledName": "$s15MovieServiceSDK0A13VideoResponseV",
+        "moduleName": "MovieServiceSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MovieVideo",
+        "printedName": "MovieVideo",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MovieServiceSDK0A5VideoV2idSSvp",
+            "mangledName": "$s15MovieServiceSDK0A5VideoV2idSSvp",
+            "moduleName": "MovieServiceSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MovieServiceSDK0A5VideoV2idSSvg",
+                "mangledName": "$s15MovieServiceSDK0A5VideoV2idSSvg",
+                "moduleName": "MovieServiceSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MovieVideo",
+                "printedName": "MovieServiceSDK.MovieVideo",
+                "usr": "s:15MovieServiceSDK0A5VideoV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15MovieServiceSDK0A5VideoV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s15MovieServiceSDK0A5VideoV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MovieServiceSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:15MovieServiceSDK0A5VideoV",
+        "mangledName": "$s15MovieServiceSDK0A5VideoV",
+        "moduleName": "MovieServiceSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MovieServiceSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ServiceError",
+        "printedName": "ServiceError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "apiError",
+            "printedName": "apiError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MovieServiceSDK.ServiceError.Type) -> MovieServiceSDK.ServiceError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ServiceError",
+                    "printedName": "MovieServiceSDK.ServiceError",
+                    "usr": "s:15MovieServiceSDK0B5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MovieServiceSDK.ServiceError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ServiceError",
+                        "printedName": "MovieServiceSDK.ServiceError",
+                        "usr": "s:15MovieServiceSDK0B5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15MovieServiceSDK0B5ErrorO03apiD0yA2CmF",
+            "mangledName": "$s15MovieServiceSDK0B5ErrorO03apiD0yA2CmF",
+            "moduleName": "MovieServiceSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "invalidEndpoint",
+            "printedName": "invalidEndpoint",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MovieServiceSDK.ServiceError.Type) -> MovieServiceSDK.ServiceError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ServiceError",
+                    "printedName": "MovieServiceSDK.ServiceError",
+                    "usr": "s:15MovieServiceSDK0B5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MovieServiceSDK.ServiceError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ServiceError",
+                        "printedName": "MovieServiceSDK.ServiceError",
+                        "usr": "s:15MovieServiceSDK0B5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15MovieServiceSDK0B5ErrorO15invalidEndpointyA2CmF",
+            "mangledName": "$s15MovieServiceSDK0B5ErrorO15invalidEndpointyA2CmF",
+            "moduleName": "MovieServiceSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "invalidResponse",
+            "printedName": "invalidResponse",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MovieServiceSDK.ServiceError.Type) -> MovieServiceSDK.ServiceError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ServiceError",
+                    "printedName": "MovieServiceSDK.ServiceError",
+                    "usr": "s:15MovieServiceSDK0B5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MovieServiceSDK.ServiceError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ServiceError",
+                        "printedName": "MovieServiceSDK.ServiceError",
+                        "usr": "s:15MovieServiceSDK0B5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15MovieServiceSDK0B5ErrorO15invalidResponseyA2CmF",
+            "mangledName": "$s15MovieServiceSDK0B5ErrorO15invalidResponseyA2CmF",
+            "moduleName": "MovieServiceSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "response",
+            "printedName": "response",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MovieServiceSDK.ServiceError.Type) -> (MovieServiceSDK.ServiceResponse) -> MovieServiceSDK.ServiceError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(MovieServiceSDK.ServiceResponse) -> MovieServiceSDK.ServiceError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ServiceError",
+                        "printedName": "MovieServiceSDK.ServiceError",
+                        "usr": "s:15MovieServiceSDK0B5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ServiceResponse",
+                        "printedName": "MovieServiceSDK.ServiceResponse",
+                        "usr": "s:15MovieServiceSDK0B8ResponseV"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MovieServiceSDK.ServiceError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ServiceError",
+                        "printedName": "MovieServiceSDK.ServiceError",
+                        "usr": "s:15MovieServiceSDK0B5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15MovieServiceSDK0B5ErrorO8responseyAcA0B8ResponseVcACmF",
+            "mangledName": "$s15MovieServiceSDK0B5ErrorO8responseyAcA0B8ResponseVcACmF",
+            "moduleName": "MovieServiceSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "noData",
+            "printedName": "noData",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MovieServiceSDK.ServiceError.Type) -> MovieServiceSDK.ServiceError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ServiceError",
+                    "printedName": "MovieServiceSDK.ServiceError",
+                    "usr": "s:15MovieServiceSDK0B5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MovieServiceSDK.ServiceError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ServiceError",
+                        "printedName": "MovieServiceSDK.ServiceError",
+                        "usr": "s:15MovieServiceSDK0B5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15MovieServiceSDK0B5ErrorO6noDatayA2CmF",
+            "mangledName": "$s15MovieServiceSDK0B5ErrorO6noDatayA2CmF",
+            "moduleName": "MovieServiceSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "serializationError",
+            "printedName": "serializationError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MovieServiceSDK.ServiceError.Type) -> MovieServiceSDK.ServiceError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ServiceError",
+                    "printedName": "MovieServiceSDK.ServiceError",
+                    "usr": "s:15MovieServiceSDK0B5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MovieServiceSDK.ServiceError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ServiceError",
+                        "printedName": "MovieServiceSDK.ServiceError",
+                        "usr": "s:15MovieServiceSDK0B5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15MovieServiceSDK0B5ErrorO013serializationD0yA2CmF",
+            "mangledName": "$s15MovieServiceSDK0B5ErrorO013serializationD0yA2CmF",
+            "moduleName": "MovieServiceSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "errorUserInfo",
+            "printedName": "errorUserInfo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MovieServiceSDK0B5ErrorO13errorUserInfoSDySSypGvp",
+            "mangledName": "$s15MovieServiceSDK0B5ErrorO13errorUserInfoSDySSypGvp",
+            "moduleName": "MovieServiceSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MovieServiceSDK0B5ErrorO13errorUserInfoSDySSypGvg",
+                "mangledName": "$s15MovieServiceSDK0B5ErrorO13errorUserInfoSDySSypGvg",
+                "moduleName": "MovieServiceSDK",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:15MovieServiceSDK0B5ErrorO",
+        "mangledName": "$s15MovieServiceSDK0B5ErrorO",
+        "moduleName": "MovieServiceSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomNSError",
+            "printedName": "CustomNSError",
+            "usr": "s:10Foundation13CustomNSErrorP",
+            "mangledName": "$s10Foundation13CustomNSErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MovieServiceSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ServiceResponse",
+        "printedName": "ServiceResponse",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ServiceResponse",
+                "printedName": "MovieServiceSDK.ServiceResponse",
+                "usr": "s:15MovieServiceSDK0B8ResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15MovieServiceSDK0B8ResponseV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s15MovieServiceSDK0B8ResponseV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MovieServiceSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MovieServiceSDK0B8ResponseV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s15MovieServiceSDK0B8ResponseV6encode2toys7Encoder_p_tKF",
+            "moduleName": "MovieServiceSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:15MovieServiceSDK0B8ResponseV",
+        "mangledName": "$s15MovieServiceSDK0B8ResponseV",
+        "moduleName": "MovieServiceSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MovieServiceSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MovieService",
+        "printedName": "MovieService",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MovieService",
+                "printedName": "MovieServiceSDK.MovieService",
+                "usr": "s:15MovieServiceSDK0aB0C"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MovieServiceSDK0aB0C6sharedACvpZ",
+            "mangledName": "$s15MovieServiceSDK0aB0C6sharedACvpZ",
+            "moduleName": "MovieServiceSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MovieService",
+                    "printedName": "MovieServiceSDK.MovieService",
+                    "usr": "s:15MovieServiceSDK0aB0C"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MovieServiceSDK0aB0C6sharedACvgZ",
+                "mangledName": "$s15MovieServiceSDK0aB0C6sharedACvgZ",
+                "moduleName": "MovieServiceSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "apiKey",
+            "printedName": "apiKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MovieServiceSDK0aB0C6apiKeySSvp",
+            "mangledName": "$s15MovieServiceSDK0aB0C6apiKeySSvp",
+            "moduleName": "MovieServiceSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MovieServiceSDK0aB0C6apiKeySSvg",
+                "mangledName": "$s15MovieServiceSDK0aB0C6apiKeySSvg",
+                "moduleName": "MovieServiceSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MovieServiceSDK0aB0C6apiKeySSvs",
+                "mangledName": "$s15MovieServiceSDK0aB0C6apiKeySSvs",
+                "moduleName": "MovieServiceSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MovieServiceSDK0aB0C6apiKeySSvM",
+                "mangledName": "$s15MovieServiceSDK0aB0C6apiKeySSvM",
+                "moduleName": "MovieServiceSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "fetchMovies",
+            "printedName": "fetchMovies(from:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MovieListEndpoint",
+                "printedName": "MovieServiceSDK.MovieListEndpoint",
+                "usr": "s:15MovieServiceSDK0A12ListEndpointO"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<MovieServiceSDK.MovieResponse, MovieServiceSDK.ServiceError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<MovieServiceSDK.MovieResponse, MovieServiceSDK.ServiceError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MovieResponse",
+                        "printedName": "MovieServiceSDK.MovieResponse",
+                        "usr": "s:15MovieServiceSDK0A8ResponseV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ServiceError",
+                        "printedName": "MovieServiceSDK.ServiceError",
+                        "usr": "s:15MovieServiceSDK0B5ErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MovieServiceSDK0aB0C11fetchMovies4from10completionyAA0A12ListEndpointO_ys6ResultOyAA0A8ResponseVAA0B5ErrorOGctF",
+            "mangledName": "$s15MovieServiceSDK0aB0C11fetchMovies4from10completionyAA0A12ListEndpointO_ys6ResultOyAA0A8ResponseVAA0B5ErrorOGctF",
+            "moduleName": "MovieServiceSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchMovie",
+            "printedName": "fetchMovie(id:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<MovieServiceSDK.Movie, MovieServiceSDK.ServiceError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<MovieServiceSDK.Movie, MovieServiceSDK.ServiceError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Movie",
+                        "printedName": "MovieServiceSDK.Movie",
+                        "usr": "s:15MovieServiceSDK0A0V"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ServiceError",
+                        "printedName": "MovieServiceSDK.ServiceError",
+                        "usr": "s:15MovieServiceSDK0B5ErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MovieServiceSDK0aB0C05fetchA02id10completionySi_ys6ResultOyAA0A0VAA0B5ErrorOGctF",
+            "mangledName": "$s15MovieServiceSDK0aB0C05fetchA02id10completionySi_ys6ResultOyAA0A0VAA0B5ErrorOGctF",
+            "moduleName": "MovieServiceSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "searchMovie",
+            "printedName": "searchMovie(query:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<MovieServiceSDK.MovieResponse, MovieServiceSDK.ServiceError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<MovieServiceSDK.MovieResponse, MovieServiceSDK.ServiceError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MovieResponse",
+                        "printedName": "MovieServiceSDK.MovieResponse",
+                        "usr": "s:15MovieServiceSDK0A8ResponseV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ServiceError",
+                        "printedName": "MovieServiceSDK.ServiceError",
+                        "usr": "s:15MovieServiceSDK0B5ErrorO"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15MovieServiceSDK0aB0C06searchA05query10completionySS_ys6ResultOyAA0A8ResponseVAA0B5ErrorOGctF",
+            "mangledName": "$s15MovieServiceSDK0aB0C06searchA05query10completionySS_ys6ResultOyAA0A8ResponseVAA0B5ErrorOGctF",
+            "moduleName": "MovieServiceSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:15MovieServiceSDK0aB0C",
+        "mangledName": "$s15MovieServiceSDK0aB0C",
+        "moduleName": "MovieServiceSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "MovieServiceProtocol",
+            "printedName": "MovieServiceProtocol",
+            "usr": "s:15MovieServiceSDK0aB8ProtocolP",
+            "mangledName": "$s15MovieServiceSDK0aB8ProtocolP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MovieServiceSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Utils",
+        "printedName": "Utils",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "jsonDecoder",
+            "printedName": "jsonDecoder",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JSONDecoder",
+                "printedName": "Foundation.JSONDecoder",
+                "usr": "s:10Foundation11JSONDecoderC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MovieServiceSDK5UtilsC11jsonDecoder10Foundation11JSONDecoderCvpZ",
+            "mangledName": "$s15MovieServiceSDK5UtilsC11jsonDecoder10Foundation11JSONDecoderCvpZ",
+            "moduleName": "MovieServiceSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "JSONDecoder",
+                    "printedName": "Foundation.JSONDecoder",
+                    "usr": "s:10Foundation11JSONDecoderC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MovieServiceSDK5UtilsC11jsonDecoder10Foundation11JSONDecoderCvgZ",
+                "mangledName": "$s15MovieServiceSDK5UtilsC11jsonDecoder10Foundation11JSONDecoderCvgZ",
+                "moduleName": "MovieServiceSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "dateFormatter",
+            "printedName": "dateFormatter",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DateFormatter",
+                "printedName": "Foundation.DateFormatter",
+                "usr": "c:objc(cs)NSDateFormatter"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MovieServiceSDK5UtilsC13dateFormatterSo06NSDateF0CvpZ",
+            "mangledName": "$s15MovieServiceSDK5UtilsC13dateFormatterSo06NSDateF0CvpZ",
+            "moduleName": "MovieServiceSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DateFormatter",
+                    "printedName": "Foundation.DateFormatter",
+                    "usr": "c:objc(cs)NSDateFormatter"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MovieServiceSDK5UtilsC13dateFormatterSo06NSDateF0CvgZ",
+                "mangledName": "$s15MovieServiceSDK5UtilsC13dateFormatterSo06NSDateF0CvgZ",
+                "moduleName": "MovieServiceSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "yearFormatter",
+            "printedName": "yearFormatter",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DateFormatter",
+                "printedName": "Foundation.DateFormatter",
+                "usr": "c:objc(cs)NSDateFormatter"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MovieServiceSDK5UtilsC13yearFormatterSo06NSDateF0CvpZ",
+            "mangledName": "$s15MovieServiceSDK5UtilsC13yearFormatterSo06NSDateF0CvpZ",
+            "moduleName": "MovieServiceSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DateFormatter",
+                    "printedName": "Foundation.DateFormatter",
+                    "usr": "c:objc(cs)NSDateFormatter"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MovieServiceSDK5UtilsC13yearFormatterSo06NSDateF0CvgZ",
+                "mangledName": "$s15MovieServiceSDK5UtilsC13yearFormatterSo06NSDateF0CvgZ",
+                "moduleName": "MovieServiceSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "durationFormatter",
+            "printedName": "durationFormatter",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DateComponentsFormatter",
+                "printedName": "Foundation.DateComponentsFormatter",
+                "usr": "c:objc(cs)NSDateComponentsFormatter"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15MovieServiceSDK5UtilsC17durationFormatterSo016NSDateComponentsF0CvpZ",
+            "mangledName": "$s15MovieServiceSDK5UtilsC17durationFormatterSo016NSDateComponentsF0CvpZ",
+            "moduleName": "MovieServiceSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DateComponentsFormatter",
+                    "printedName": "Foundation.DateComponentsFormatter",
+                    "usr": "c:objc(cs)NSDateComponentsFormatter"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15MovieServiceSDK5UtilsC17durationFormatterSo016NSDateComponentsF0CvgZ",
+                "mangledName": "$s15MovieServiceSDK5UtilsC17durationFormatterSo016NSDateComponentsF0CvgZ",
+                "moduleName": "MovieServiceSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:15MovieServiceSDK5UtilsC",
+        "mangledName": "$s15MovieServiceSDK5UtilsC",
+        "moduleName": "MovieServiceSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieServiceProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 707,
+      "length": 10,
+      "value": "\"Upcoming\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieServiceProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 752,
+      "length": 9,
+      "value": "\"Popular\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 894,
+      "length": 54,
+      "value": "\"https:\/\/image.tmdb.org\/t\/p\/w500\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 944,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 947,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1021,
+      "length": 52,
+      "value": "\"https:\/\/image.tmdb.org\/t\/p\/w500\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1069,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1072,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1153,
+      "length": 5,
+      "value": "\"n\/a\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1270,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1289,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1342,
+      "length": 5,
+      "value": "\"★\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1463,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1491,
+      "length": 5,
+      "value": "\"n\/a\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1522,
+      "length": 24,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1542,
+      "length": 1,
+      "value": "\"\/10\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1723,
+      "length": 5,
+      "value": "\"n\/a\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1894,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1922,
+      "length": 5,
+      "value": "\"n\/a\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2014,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 2021,
+      "length": 5,
+      "value": "\"n\/a\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 2242,
+      "length": 10,
+      "value": "\"director\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 2346,
+      "length": 10,
+      "value": "\"producer\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 2454,
+      "length": 7,
+      "value": "\"story\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 3267,
+      "length": 9,
+      "value": "\"YouTube\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 3344,
+      "length": 36,
+      "value": "\"https:\/\/youtube.com\/watch?v=\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 3379,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/ServiceError.swift",
+      "kind": "StringLiteral",
+      "offset": 388,
+      "length": 22,
+      "value": "\"Failed to fetch data\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/ServiceError.swift",
+      "kind": "StringLiteral",
+      "offset": 449,
+      "length": 18,
+      "value": "\"Invalid endpoint\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/ServiceError.swift",
+      "kind": "StringLiteral",
+      "offset": 506,
+      "length": 18,
+      "value": "\"Invalid response\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/ServiceError.swift",
+      "kind": "StringLiteral",
+      "offset": 622,
+      "length": 9,
+      "value": "\"No data\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/ServiceError.swift",
+      "kind": "StringLiteral",
+      "offset": 673,
+      "length": 23,
+      "value": "\"Failed to decode data\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieService.swift",
+      "kind": "StringLiteral",
+      "offset": 267,
+      "length": 8,
+      "value": "\"APIKEY\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieService.swift",
+      "kind": "StringLiteral",
+      "offset": 305,
+      "length": 30,
+      "value": "\"https:\/\/api.themoviedb.org\/3\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieService.swift",
+      "kind": "StringLiteral",
+      "offset": 603,
+      "length": 42,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieService.swift",
+      "kind": "StringLiteral",
+      "offset": 617,
+      "length": 1,
+      "value": "\"\/movie\/\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieService.swift",
+      "kind": "StringLiteral",
+      "offset": 644,
+      "length": 9,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieService.swift",
+      "kind": "StringLiteral",
+      "offset": 942,
+      "length": 27,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieService.swift",
+      "kind": "StringLiteral",
+      "offset": 956,
+      "length": 1,
+      "value": "\"\/movie\/\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieService.swift",
+      "kind": "StringLiteral",
+      "offset": 968,
+      "length": 9,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieService.swift",
+      "kind": "Dictionary",
+      "offset": 1106,
+      "length": 40,
+      "value": "[(\"append_to_response\", \"videos,credits\")]"
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieService.swift",
+      "kind": "StringLiteral",
+      "offset": 1331,
+      "length": 28,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieService.swift",
+      "kind": "StringLiteral",
+      "offset": 1345,
+      "length": 1,
+      "value": "\"\/search\/movie\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieService.swift",
+      "kind": "StringLiteral",
+      "offset": 1609,
+      "length": 7,
+      "value": "\"query\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1910,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieService.swift",
+      "kind": "StringLiteral",
+      "offset": 2058,
+      "length": 9,
+      "value": "\"api_key\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieService.swift",
+      "kind": "StringLiteral",
+      "offset": 2797,
+      "length": 51,
+      "value": "\"Response: \""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieService.swift",
+      "kind": "StringLiteral",
+      "offset": 2847,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2930,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2936,
+      "length": 3,
+      "value": "300"
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieService.swift",
+      "kind": "StringLiteral",
+      "offset": 3913,
+      "length": 18,
+      "value": "\"Error: \""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/MovieService.swift",
+      "kind": "StringLiteral",
+      "offset": 3929,
+      "length": 1,
+      "value": "\")\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 524,
+      "length": 12,
+      "value": "\"yyyy-mm-dd\""
+    },
+    {
+      "filePath": "\/Users\/devanandchauhan\/Documents\/DevWorkspace\/LearningSwift\/MovieServiceSDK\/MovieServiceSDK\/MovieService\/Utils.swift",
+      "kind": "StringLiteral",
+      "offset": 705,
+      "length": 6,
+      "value": "\"yyyy\""
+    }
+  ]
+}

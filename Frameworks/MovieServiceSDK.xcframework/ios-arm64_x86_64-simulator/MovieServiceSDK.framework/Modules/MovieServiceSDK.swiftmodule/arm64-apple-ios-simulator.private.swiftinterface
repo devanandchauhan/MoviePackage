@@ -1,0 +1,132 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target arm64-apple-ios17.2-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MovieServiceSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+@_exported import MovieServiceSDK
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public protocol MovieServiceProtocol {
+  func fetchMovies(from endpoint: MovieServiceSDK.MovieListEndpoint, completion: @escaping (Swift.Result<MovieServiceSDK.MovieResponse, MovieServiceSDK.ServiceError>) -> ())
+  func fetchMovie(id: Swift.Int, completion: @escaping (Swift.Result<MovieServiceSDK.Movie, MovieServiceSDK.ServiceError>) -> ())
+  func searchMovie(query: Swift.String, completion: @escaping (Swift.Result<MovieServiceSDK.MovieResponse, MovieServiceSDK.ServiceError>) -> ())
+}
+public enum MovieListEndpoint : Swift.String, Swift.CaseIterable, Swift.Identifiable {
+  public var id: Swift.String {
+    get
+  }
+  case popular
+  case upcoming
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [MovieServiceSDK.MovieListEndpoint]
+  public typealias ID = Swift.String
+  public typealias RawValue = Swift.String
+  public static var allCases: [MovieServiceSDK.MovieListEndpoint] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct MovieResponse : Swift.Decodable {
+  public let results: [MovieServiceSDK.Movie]
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Movie : Swift.Decodable, Swift.Identifiable, Swift.Hashable {
+  public static func == (lhs: MovieServiceSDK.Movie, rhs: MovieServiceSDK.Movie) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public let id: Swift.Int
+  public let title: Swift.String
+  public let backdropPath: Swift.String?
+  public let posterPath: Swift.String?
+  public let overview: Swift.String
+  public let voteAverage: Swift.Double
+  public let voteCount: Swift.Int
+  public let runtime: Swift.Int?
+  public let releaseDate: Swift.String?
+  public var backdropURL: Foundation.URL {
+    get
+  }
+  public var posterURL: Foundation.URL {
+    get
+  }
+  public var genreText: Swift.String {
+    get
+  }
+  public var ratingText: Swift.String {
+    get
+  }
+  public var scoreText: Swift.String {
+    get
+  }
+  public var yearText: Swift.String {
+    get
+  }
+  public var durationText: Swift.String {
+    get
+  }
+  public typealias ID = Swift.Int
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MovieGenre : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MovieCredit : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MovieCast : Swift.Decodable, Swift.Identifiable {
+  public let id: Swift.Int
+  public typealias ID = Swift.Int
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MovieCrew : Swift.Decodable, Swift.Identifiable {
+  public let id: Swift.Int
+  public typealias ID = Swift.Int
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MovieVideoResponse : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MovieVideo : Swift.Decodable, Swift.Identifiable {
+  public let id: Swift.String
+  public typealias ID = Swift.String
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum ServiceError : Swift.Error, Foundation.CustomNSError {
+  case apiError
+  case invalidEndpoint
+  case invalidResponse
+  case response(MovieServiceSDK.ServiceResponse)
+  case noData
+  case serializationError
+  public var errorUserInfo: [Swift.String : Any] {
+    get
+  }
+}
+public struct ServiceResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class MovieService : MovieServiceSDK.MovieServiceProtocol {
+  public static let shared: MovieServiceSDK.MovieService
+  public var apiKey: Swift.String
+  public func fetchMovies(from endpoint: MovieServiceSDK.MovieListEndpoint, completion: @escaping (Swift.Result<MovieServiceSDK.MovieResponse, MovieServiceSDK.ServiceError>) -> ())
+  public func fetchMovie(id: Swift.Int, completion: @escaping (Swift.Result<MovieServiceSDK.Movie, MovieServiceSDK.ServiceError>) -> ())
+  public func searchMovie(query: Swift.String, completion: @escaping (Swift.Result<MovieServiceSDK.MovieResponse, MovieServiceSDK.ServiceError>) -> ())
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class Utils {
+  public static let jsonDecoder: Foundation.JSONDecoder
+  public static let dateFormatter: Foundation.DateFormatter
+  public static let yearFormatter: Foundation.DateFormatter
+  public static let durationFormatter: Foundation.DateComponentsFormatter
+  @objc deinit
+}
+extension MovieServiceSDK.MovieListEndpoint : Swift.Equatable {}
+extension MovieServiceSDK.MovieListEndpoint : Swift.Hashable {}
+extension MovieServiceSDK.MovieListEndpoint : Swift.RawRepresentable {}
